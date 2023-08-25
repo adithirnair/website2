@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c867a;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            background-color: rgb(61, 145, 104);
+            color: white;
+        }
+        .nav a {
+            text-decoration: none;
+            color: pink;
+            padding: 0 10px;
+        }
+        .content {
+            padding: 20px;
+            background-color: #88ddea;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .header {
+                font-size: 24px;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 480px) {
+            .header {
+                font-size: 20px;
+            }
+            .content {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MUSIC STREAMING SERVICE</h1>
+        </div>
+        <div class="nav">
+            <a href="#">Playlist</a>
+            <a href="#">Account</a>
+            <a href="#">Settings</a>
+            <a href="#">Profile</a>
+            <a href="#">Search</a>
+            <a href="#">Liked Songs</a>
+        </div>
+        <div class="content">
+            <p>WELCOME BACK TO THE BEST MUSIC STREAMING PLATFORM</p>
+            <h2>NON STOP MUSIC FOR FREE , NO ADVERTISEMENTS AT ALL !</h2>
+        </div>
+    </div>
+</body>
+</html>
+
